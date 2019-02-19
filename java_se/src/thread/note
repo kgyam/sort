@@ -1,0 +1,13 @@
+java线程笔记：
+
+1. 实现线程的方式： extends Thread
+        或者 implements Runnable（当类为某个类的子类无法继承Thread的时候可以用这种方式）
+
+2. 线程调度由操作系统决定，程序无法决定
+
+
+3.join()方法就是让当前线程等待另外一个线程结束才继续执行
+  join(time)即等待一定时间后 当前线程不再等待继续执行代码
+
+
+4.setDaemon(true)要在start()调用前执行 否则无效
